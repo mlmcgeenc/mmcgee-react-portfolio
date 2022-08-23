@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component matches snapshit DOM node structure 1`] = `
+<DocumentFragment>
+  <div>
+    Contact
+  </div>
+</DocumentFragment>
+`;
