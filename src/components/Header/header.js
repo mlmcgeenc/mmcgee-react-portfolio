@@ -5,7 +5,7 @@ import '../../Assets/css/custom.css';
 
 const Header = () => {
   return (
-    <div className="container-fluid hero">
+    <div className="container-fluid">
       <Navigation />
     </div>
   );

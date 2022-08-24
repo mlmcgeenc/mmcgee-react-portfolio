@@ -4,7 +4,7 @@ import '../../Assets/css/custom.css';
 
 const Navigation = () => {
 	return (
-		<nav className='navbar navbar-expand-lg navbar-fonts '>
+		<nav className='navbar fixed-top navbar-expand-lg navbar-fonts '>
 			<div className='container'>
         <div className="nav-logo"></div>
 				<a className='navbar-brand' href='#About'>
