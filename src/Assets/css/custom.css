@@ -1,19 +1,49 @@
+:root {
+  --dark-blue: rgb(15, 38, 67);
+  --medium-blue: rgb(37, 86, 127);
+  --medium-light-blue: rgb(116, 154, 184);
+  --light-blue: rgb(174, 187, 201);
+  --white-blue: rgb(250, 250, 250);
+}
+
 .navbar-fonts {
   font-family: Vegur, Helvetica, sans-serif;
 }
 
 .navbar-brand {
   font-size: 36px;
+  color: var(--dark-blue)
+}
+
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  background-image: url('../images/Circle-Logo.png');
+  background-size: cover;
+  margin-right: 18px;
 }
 
 .nav-item {
   font-size: 18px;
 }
 
+.nav-link {
+  color: var(--medium-blue)
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: var(--dark-blue) !important;
+}
+
 .hero {
   background-image: url('../images/wes-hicks-ZW6RUvsaFTc-unsplash.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 
 .test {
