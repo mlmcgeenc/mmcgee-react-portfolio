@@ -1,6 +1,19 @@
 .navbar-fonts {
   font-family: Vegur, Helvetica, sans-serif;
-  color: red;
+}
+
+.navbar-brand {
+  font-size: 36px;
+}
+
+.nav-item {
+  font-size: 18px;
+}
+
+.hero {
+  background-image: url('../images/wes-hicks-ZW6RUvsaFTc-unsplash.jpg');
+  background-size: cover;
+  height: 100vh;
 }
 
 .test {

@@ -1,27 +1,67 @@
 import React from 'react';
-import { Container, Nav, Navbar, Col } from 'react-bootstrap';
+import 'bootstrap';
 import '../../Assets/css/custom.css';
 
 const Navigation = () => {
 	return (
-		<Navbar bg='light' expand='lg'>
-			<Container className='navbar-fonts'>
-				<Col className='d-flex justify-content-start'>
-					<Navbar.Brand href='#About'>Matt McGee</Navbar.Brand>
-				</Col>
-				<Col>
-					<Navbar.Toggle aria-controls='basic-navbar-nav' />
-					<Navbar.Collapse id='basic-navbar-nav'>
-						<Nav className='ms-auto'>
-							<Nav.Link href='#About'>About Me</Nav.Link>
-							<Nav.Link href='#Portfolio'>Portfolio</Nav.Link>
-							<Nav.Link href='#Contact'>Contact</Nav.Link>
-							<Nav.Link href='#Resume'>Resume</Nav.Link>
-						</Nav>
-					</Navbar.Collapse>
-				</Col>
-			</Container>
-		</Navbar>
+		<nav className='navbar navbar-expand-lg navbar-fonts '>
+			<div className='container'>
+				<a className='navbar-brand' href='#'>
+					Matt McGee
+				</a>
+				<button
+					className='navbar-toggler'
+					type='button'
+					data-bs-toggle='collapse'
+					data-bs-target='#navbarSupportedContent'
+					aria-controls='navbarSupportedContent'
+					aria-expanded='false'
+					aria-label='Toggle navigation'
+				>
+					<span className='navbar-toggler-icon'></span>
+				</button>
+				<div className='collapse navbar-collapse' id='navbarSupportedContent'>
+					<ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
+						<li className='nav-item'>
+							<a className='nav-link active' aria-current='page' href='#About'>
+								About Me
+							</a>
+						</li>
+						<li className='nav-item dropdown'>
+							<a className='nav-link dropdown-toggle' href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+								Portfolio
+							</a>
+							<ul className='dropdown-menu'>
+								<li>
+									<a className='dropdown-item' href='#All-Projects'>
+										All Projects
+									</a>
+								</li>
+								<li>
+									<hr className='dropdown-divider'></hr>
+								</li>
+								<li>
+									<a className='dropdown-item' href='#'>
+										Local Music Scene
+									</a>
+								</li>
+								<li>
+									<a className='dropdown-item' href='#'>
+										Movie Search
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li className='nav-item'>
+							<a className='nav-link'>Contact</a>
+						</li>
+						<li className='nav-item'>
+							<a className='nav-link disabled'>Resume</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	);
 };
 
