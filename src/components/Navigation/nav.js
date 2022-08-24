@@ -11,8 +11,8 @@ const Navigation = () => {
 				</Col>
 				<Col>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
-					<Navbar.Collapse className='d-flex justify-content-end' id='basic-navbar-nav'>
-						<Nav>
+					<Navbar.Collapse id='basic-navbar-nav'>
+						<Nav className='ms-auto'>
 							<Nav.Link href='#About'>About Me</Nav.Link>
 							<Nav.Link href='#Portfolio'>Portfolio</Nav.Link>
 							<Nav.Link href='#Contact'>Contact</Nav.Link>
