@@ -12,6 +12,15 @@
   font-family: Vegur, Helvetica, sans-serif;
 }
 
+/* dashboard */
+.glass-effect {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .2));
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+  border-radius: 10px;
+}
+
 /* ======= Header ======= */
 .add-space {
   height: 80px;
@@ -57,14 +66,16 @@
   max-width: 720px;
   margin-top: 10vh;
   padding: 36px;
+  color: var(--dark-blue);
 }
 
 .form-group {
-  margin: 9px 0 9px 0;
+  margin: 24px 0 24px 0;
 }
 
 .btn {
   font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
 }
 
 /* ======= Footer ======= */
@@ -76,9 +87,7 @@
 }
 
 .footer-logo {
-  max-width: 54px;
-  min-width: 18px;
-  margin-top: 21px;
+  width: 54px;
   transition: 0.2s;
   filter: invert(59%) sepia(26%) saturate(466%) hue-rotate(164deg) brightness(95%) contrast(88%);
 }
@@ -90,3 +99,24 @@
 .test {
   border: 1px solid magenta;
 }
+
+/* xs */
+@media screen and (max-width: 576px) {
+  .footer-logo {
+    max-width: 40px;
+    transition: 0.2s;
+    filter: invert(59%) sepia(26%) saturate(466%) hue-rotate(164deg) brightness(95%) contrast(88%);
+  }
+}
+
+/* sm */
+@media screen and (max-width: 768px) {}
+
+/* md */
+@media screen and (max-width: 992px) {}
+
+/* lg */
+@media screen and (max-width: 1200px) {}
+
+/* xl */
+@media screen and (max-width: 1400px) {}

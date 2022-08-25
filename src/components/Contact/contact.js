@@ -38,7 +38,7 @@ const Contact = () => {
 	console.log(formState);
 
 	return (
-			<section className='contact-form col-12 col-sm-10 col-md-8 col-xl-6 mx-auto test'>
+			<section className='contact-form  glass-effect col-12 col-sm-10 col-md-8 col-xl-6 mx-auto'>
 				<h1 data-testid='contactTitle'>Contact Me</h1>
 				<hr />
 				<form>

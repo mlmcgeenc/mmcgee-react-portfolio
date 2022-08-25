@@ -9,8 +9,8 @@ import LinkedinLogo from '../../Assets/images/linkedin-brands.svg';
 
 const Footer = () => {
 	return (
-		<div className='justify-content-center fixed-bottom footer'>
-			<a className='me-4' href='https://github.com/mlmcgeenc'>
+		<div className='d-flex justify-content-center align-items-center fixed-bottom footer test'>
+			<a className='me-4 test' href='https://github.com/mlmcgeenc'>
 				<img className='footer-logo' src={GithubLogo} alt='github logo'></img>
 			</a>
 			<a className='mx-4' href='https://www.linkedin.com/in/mattmcgeenc/'>
