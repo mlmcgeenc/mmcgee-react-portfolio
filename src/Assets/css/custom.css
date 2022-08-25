@@ -58,6 +58,14 @@
   padding: 36px;
 }
 
+.form-group {
+  margin: 9px 0 9px 0;
+}
+
+.btn {
+  font-weight: bold;
+}
+
 /* ======= Footer ======= */
 .footer {
   min-height: 96px;

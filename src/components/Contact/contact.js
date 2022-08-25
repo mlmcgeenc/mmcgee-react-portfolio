@@ -39,49 +39,58 @@ const Contact = () => {
 
 	return (
 		<section className='contact-form col-12 col-sm-10 col-md-8 col-xl-6 m-auto test'>
+			<h1 data-testid='contactTitle'>Contact Me</h1>
+			<hr />
 			<form>
-				<div clasName='form-group'>
-					<label for='inputName'>Name</label>
-					<input type='text' className='form-control' defaultValue={name} onBlur={handleChange} name='inputName' placeholder='Enter your name'></input>
+				<div className='form-group'>
+					<label htmlFor='inputName'>Name</label>
+					<input
+						type='text'
+						className='form-control'
+						defaultValue={name}
+						onBlur={handleChange}
+						id='inputName'
+						name='inputName'
+						placeholder='Enter your name'
+					></input>
 				</div>
 				<div class='form-group'>
-					<label for='inputEmail'>Email address</label>
-					<input type='email' class='form-control' id='inputEmail' aria-describedby='emailHelp' defaultValue={email} placeholder='Enter your email' />
-					<small id='emailHelp' class='form-text text-muted'>
-						We'll never share your email with anyone else.
+					<label htmlFor='inputEmail'>Email address</label>
+					<input
+						type='email'
+						className='form-control'
+						defaultValue={email}
+						onBlur={handleChange}
+						id='inputEmail'
+						name='inputEmail'
+						placeholder='Enter your email'
+					/>
+					<small id='emailHelp' className='form-text text-muted'>
+						I'll never share your email with anyone else.
 					</small>
 				</div>
-				<div class='form-group'>
-					<label for='message'>Message</label>
-					<textarea class='form-control' id='message' rows='5' placeholder='Leave me a message'></textarea>
-				</div>
-				<button type='submit' class='btn btn-primary'>
-					Submit
-				</button>
-			</form>
-
-			<h1 data-testid='contactTitle'>Contact Me</h1>
-			<form id='contact-form'>
-				<div>
-					<label htmlFor='name'>Name:</label>
-					<input type='text' defaultValue={name} onBlur={handleChange} name='name'></input>
-				</div>
-				<div>
-					<label htmlFor='email'>Email address:</label>
-					<input type='email' defaultValue={email} onBlur={handleChange} name='email'></input>
-				</div>
-				<div>
-					<label htmlFor='message'>Message:</label>
-					<textarea name='message' defaultValue={message} onBlur={handleChange} rows='5' />
+				<div className='form-group'>
+					<label htmlFor='message'>Message</label>
+					<textarea
+						className='form-control'
+						defaultValue={message}
+						onBlur={handleChange}
+						id='message'
+						name='message'
+						rows='5'
+						placeholder='Leave me a message'
+					></textarea>
 				</div>
 				{errorMessage && (
 					<div>
 						<p className='error-text'>{errorMessage}</p>
 					</div>
 				)}
-				<button data-testid='contactButton' type='submit' onSubmit={handleSubmit}>
-					Submit
-				</button>
+				<row className='d-flex justify-content-around'>
+					<button data-testid='contactButton' className='btn btn-lg btn-success col-6 mt-4' type='submit' onSubmit={handleSubmit}>
+						Submit
+					</button>
+				</row>
 			</form>
 		</section>
 	);
