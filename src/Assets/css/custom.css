@@ -55,6 +55,7 @@
 .contact-form {
   text-align: left;
   max-width: 720px;
+  margin-top: 10vh;
   padding: 36px;
 }
 
@@ -75,7 +76,8 @@
 }
 
 .footer-logo {
-  width: 54px;
+  max-width: 54px;
+  min-width: 18px;
   margin-top: 21px;
   transition: 0.2s;
   filter: invert(59%) sepia(26%) saturate(466%) hue-rotate(164deg) brightness(95%) contrast(88%);
