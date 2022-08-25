@@ -74,6 +74,13 @@ hr {
   color: var(--medium-light-blue);
 }
 
+.error-text {
+  color: rgb(191, 0, 0);
+  font-weight: bold;
+  padding: 5px;
+  transition: .5s;
+}
+
 /* ======= Header ======= */
 .add-space {
   height: 80px;
