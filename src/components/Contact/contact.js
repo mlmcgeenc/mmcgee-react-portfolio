@@ -14,6 +14,7 @@ const Contact = () => {
 			setErrorType(e.target.name + '-error');
 			setErrorMessageText(`All fields are required. Please enter your ${e.target.name} to continue.`);
 		} else {
+      setErrorType('')
 			console.log('else1');
 			if (e.target.name === 'email') {
 				const isValid = validateEmail(e.target.value);
