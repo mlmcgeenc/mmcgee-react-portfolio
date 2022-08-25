@@ -14,7 +14,7 @@ const Contact = () => {
 			setErrorType(e.target.name + '-error');
 			setErrorMessageText(`All fields are required. Please enter your ${e.target.name} to continue.`);
 		} else {
-      setErrorType('')
+			setErrorType('');
 			console.log('else1');
 			if (e.target.name === 'email') {
 				const isValid = validateEmail(e.target.value);
@@ -45,7 +45,14 @@ const Contact = () => {
 			<hr />
 			<form>
 				<div className='form-group'>
-					<label htmlFor='inputName'>Name</label>
+					<div>
+						<label htmlFor='inputName'>Name</label>
+						{errorType === 'name-error' && (
+							<span name='name-error' className='error-text ms-2'>
+								{errorMessageText}
+							</span>
+						)}
+					</div>
 					<input
 						type='text'
 						className='form-control'
@@ -55,16 +62,16 @@ const Contact = () => {
 						name='name'
 						placeholder='Enter your name'
 					></input>
-					{errorType === 'name-error' && (
-						<div>
-							<p name='name-error' className='error-text'>
-								{errorMessageText}
-							</p>
-						</div>
-					)}
 				</div>
 				<div className='form-group'>
-					<label htmlFor='inputEmail'>Email address</label>
+					<div>
+						<label htmlFor='inputEmail'>Email address</label>
+						{errorType === 'email-error' && (
+							<span name='email-error' className='error-text ms-2'>
+								{errorMessageText}
+							</span>
+						)}
+					</div>
 					<input
 						type='email'
 						className='form-control'
@@ -77,16 +84,16 @@ const Contact = () => {
 					<small id='emailHelp' className='form-text text-muted'>
 						I'll never share your email with anyone else.
 					</small>
-					{errorType === 'email-error' && (
-						<div>
-							<p name='email-error' className='error-text'>
-								{errorMessageText}
-							</p>
-						</div>
-					)}
 				</div>
 				<div className='form-group'>
-					<label htmlFor='message'>Message</label>
+					<div>
+						<label htmlFor='message'>Message</label>
+						{errorType === 'message-error' && (
+								<span name='message-error' className='error-text ms-2'>
+									{errorMessageText}
+								</span>
+						)}
+					</div>
 					<textarea
 						className='form-control'
 						defaultValue={message}
@@ -96,13 +103,6 @@ const Contact = () => {
 						rows='5'
 						placeholder='Leave me a message'
 					></textarea>
-					{errorType === 'message-error' && (
-						<div>
-							<p name='message-error' className='error-text'>
-								{errorMessageText}
-							</p>
-						</div>
-					)}
 				</div>
 				<div className='d-flex justify-content-around'>
 					<button data-testid='contactButton' className='btn btn-lg btn-primary col-6 mt-4' type='submit' onSubmit={handleSubmit}>
