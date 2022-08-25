@@ -10,7 +10,7 @@ import LinkedinLogo from '../../Assets/images/linkedin-brands.svg';
 const Footer = () => {
 	return (
 		<div className='d-flex justify-content-center align-items-center fixed-bottom footer'>
-			<div className='d-flex col-12 col-md-8 col-lg-6 justify-space-between'>
+			<div className='d-flex col-12 col-md-8 col-lg-4 justify-space-between'>
 				<a className='col' href='https://github.com/mlmcgeenc'>
 					<img className='footer-logo' src={GithubLogo} alt='github logo'></img>
 				</a>

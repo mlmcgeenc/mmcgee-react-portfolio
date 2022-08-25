@@ -5,11 +5,36 @@
   --light-blue: rgb(174, 187, 201);
   --white-blue: #fafafa;
   --orange: #ffa500;
+  --dark-orange: #dc7100;
 
 }
 
 .custom-fonts {
   font-family: Vegur, Helvetica, sans-serif;
+}
+
+hr {
+  color: var(--medium-blue);
+}
+
+.btn {
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+}
+
+.btn-primary {
+  background-color: var(--medium-blue);
+  border-color: var(--dark-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--medium-light-blue);
+  border-color: var(--medium-blue);
+}
+
+.btn-primary:active {
+  background-color: var(--orange);
+  border-color: var(--dark-orange);
 }
 
 /* dashboard */
@@ -73,9 +98,8 @@
   margin: 24px 0 24px 0;
 }
 
-.btn {
-  font-weight: bold;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+.form-control {
+  border: 1px solid var(--medium-light-blue);
 }
 
 /* ======= Footer ======= */

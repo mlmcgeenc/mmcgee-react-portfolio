@@ -87,7 +87,7 @@ const Contact = () => {
 						</div>
 					)}
 					<row className='d-flex justify-content-around'>
-						<button data-testid='contactButton' className='btn btn-lg btn-success col-6 mt-4' type='submit' onSubmit={handleSubmit}>
+						<button data-testid='contactButton' className='btn btn-lg btn-primary col-6 mt-4' type='submit' onSubmit={handleSubmit}>
 							Submit
 						</button>
 					</row>
