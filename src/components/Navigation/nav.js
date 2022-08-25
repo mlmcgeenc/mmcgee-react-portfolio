@@ -5,7 +5,7 @@ import Logo from '../../Assets/images/Circle-Logo.png'
 
 const Navigation = () => {
 	return (
-		<nav className='navbar fixed-top navbar-expand-lg navbar-fonts '>
+		<nav className='navbar fixed-top navbar-expand-lg'>
 			<div className='container'>
 				<div className='d-flex align-items-center'>
 					<img className='nav-logo' src={Logo} alt='webpage logo'></img>

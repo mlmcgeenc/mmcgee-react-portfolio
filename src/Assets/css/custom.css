@@ -5,11 +5,19 @@
   --light-blue: rgb(174, 187, 201);
   --white-blue: #fafafa;
   --orange: #ffa500;
+
 }
 
-.navbar-fonts {
+.custom-fonts {
   font-family: Vegur, Helvetica, sans-serif;
 }
+
+/* ======= Header ======= */
+.add-space {
+  height: 80px;
+}
+
+/* ======= Nav ======= */
 
 .navbar-brand {
   font-size: 36px;
@@ -43,6 +51,14 @@
   color: var(--dark-blue) !important;
 }
 
+/* ======= Contact Modal ======= */
+.contact-form {
+  text-align: left;
+  max-width: 720px;
+  padding: 36px;
+}
+
+/* ======= Footer ======= */
 .footer {
   min-height: 96px;
   background-color: var(--dark-blue);
