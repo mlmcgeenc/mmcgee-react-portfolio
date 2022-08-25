@@ -4,6 +4,7 @@
   --medium-light-blue: #749ab8;
   --light-blue: rgb(174, 187, 201);
   --white-blue: #fafafa;
+  --orange: #ffa500;
 }
 
 .navbar-fonts {
@@ -12,27 +13,29 @@
 
 .navbar-brand {
   font-size: 36px;
-  color: var(--dark-blue)
+  color: var(--dark-blue);
+  transition: .2s;
+}
+
+.navbar-brand:hover {
+  color: var(--orange)
 }
 
 .nav-logo {
   width: 36px;
   height: 36px;
-  background-image: url('../images/Circle-Logo.png');
-  background-size: cover;
-  margin-right: 18px;
-}
-
-.nav-item {
-  font-size: 18px;
+  margin: 0px 18px 0 0;
+  padding: 0 0 0 0;
 }
 
 .nav-link {
-  color: var(--medium-blue)
+  font-size: 18px;
+  color: var(--medium-blue);
+  margin: 0 18px 0 18px;
 }
 
 .nav-link:hover {
-  color: #ffa500;
+  color: var(--orange);
 }
 
 .nav-link.active {
@@ -50,7 +53,7 @@
 .footer-logo {
   width: 54px;
   margin-top: 21px;
-  transition: 0.3s;
+  transition: 0.2s;
   filter: invert(59%) sepia(26%) saturate(466%) hue-rotate(164deg) brightness(95%) contrast(88%);
 }
 

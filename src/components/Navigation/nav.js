@@ -1,15 +1,18 @@
 import React from 'react';
 import 'bootstrap';
 import '../../Assets/css/custom.css';
+import Logo from '../../Assets/images/Circle-Logo.png'
 
 const Navigation = () => {
 	return (
 		<nav className='navbar fixed-top navbar-expand-lg navbar-fonts '>
 			<div className='container'>
-        <div className="nav-logo"></div>
-				<a className='navbar-brand' href='#About'>
-					Matt McGee
-				</a>
+				<div className='d-flex align-items-center'>
+					<img className='nav-logo' src={Logo} alt='webpage logo'></img>
+					<a className='navbar-brand' href='#About'>
+						Matt McGee
+					</a>
+				</div>
 				<button
 					className='navbar-toggler'
 					type='button'
@@ -54,10 +57,14 @@ const Navigation = () => {
 							</ul>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link' href='#Contact'>Contact</a>
+							<a className='nav-link' href='#Contact'>
+								Contact
+							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link disabled' href='#Resume'>Resume</a>
+							<a className='nav-link disabled' href='#Resume'>
+								Resume
+							</a>
 						</li>
 					</ul>
 				</div>
