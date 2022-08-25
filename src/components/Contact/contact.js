@@ -1,37 +1,42 @@
 import React, { useState } from 'react';
 import 'bootstrap';
 import '../../Assets/css/custom.css';
+import { validateEmail } from '../../utils/helpers';
 
 const Contact = () => {
 	const [errorType, setErrorType] = useState('');
-  const [errorMessageText, setErrorMessageText] = useState('');
-  const [formState, setFormState] = useState({ name:'', email:'', message:'' });
-  const { name, email, message} = formState
+	const [errorMessageText, setErrorMessageText] = useState('');
+	const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+	const { name, email, message } = formState;
 
-  const handleClearError = (e) => {
-    setErrorType('')
-  }
-
-  const handleChange = (e) => {
-    console.log('handleChange fired')
-    if (!e.target.value.length) {
-      console.log(e.target.name+'-error')
-      setErrorType(e.target.name + '-error');
+	const handleChange = (e) => {
+		if (!e.target.value.length) {
+			setErrorType(e.target.name + '-error');
+			setErrorMessageText(`All fields are required. Please enter your ${e.target.name} to continue.`);
 		} else {
-			console.log('else coming soon')
+			console.log('else1');
+			if (e.target.name === 'email') {
+				const isValid = validateEmail(e.target.value);
+				console.log('Validating email:', isValid);
+				if (!isValid) {
+					setErrorType('email-error');
+					setErrorMessageText('Please enter a valid email address.');
+				} else {
+					console.log('els2');
+				}
+			}
 		}
 
-    if(!errorType) {
-      setFormState({ ...formState, [e.target.name]: e.target.value })
-      setErrorMessageText(`All fields are required. Please enter your ${e.target.name} to continue.`)
-    }
-    console.log('Error: ', errorType)
-  }
+		if (!errorType) {
+			setFormState({ ...formState, [e.target.name]: e.target.value });
+		}
+		console.log('Error: ', errorType);
+	};
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log("Form submitted:", formState)
-  }
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log('Form submitted:', formState);
+	};
 
 	return (
 		<section className='contact-form  glass-effect col-12 col-sm-10 col-md-8 col-xl-6 mx-auto'>
@@ -44,7 +49,6 @@ const Contact = () => {
 						type='text'
 						className='form-control'
 						defaultValue={name}
-						onClick={handleClearError}
 						onBlur={handleChange}
 						id='inputName'
 						name='name'
@@ -64,7 +68,6 @@ const Contact = () => {
 						type='email'
 						className='form-control'
 						defaultValue={email}
-						onClick={handleClearError}
 						onBlur={handleChange}
 						id='inputEmail'
 						name='email'
@@ -86,7 +89,6 @@ const Contact = () => {
 					<textarea
 						className='form-control'
 						defaultValue={message}
-						onClick={handleClearError}
 						onBlur={handleChange}
 						id='message'
 						name='message'
@@ -95,19 +97,17 @@ const Contact = () => {
 					></textarea>
 					{errorType === 'message-error' && (
 						<div>
-							<p
-                name='message-error'
-                className='error-text'
-							>{errorMessageText}
+							<p name='message-error' className='error-text'>
+								{errorMessageText}
 							</p>
 						</div>
 					)}
 				</div>
-				<row className='d-flex justify-content-around'>
+				<div className='d-flex justify-content-around'>
 					<button data-testid='contactButton' className='btn btn-lg btn-primary col-6 mt-4' type='submit' onSubmit={handleSubmit}>
 						Submit
 					</button>
-				</row>
+				</div>
 			</form>
 		</section>
 	);
