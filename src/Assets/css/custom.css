@@ -80,7 +80,7 @@
 
 /* ======= Footer ======= */
 .footer {
-  min-height: 96px;
+  height: 96px;
   background-color: var(--dark-blue);
   border-top: 1px solid var(--white-blue);
   color: var(--white-blue)
@@ -100,23 +100,37 @@
   border: 1px solid magenta;
 }
 
-/* xs */
-@media screen and (max-width: 576px) {
+/* xl */
+@media screen and (max-width: 1400px) {}
+
+/* lg */
+@media screen and (max-width: 1200px) {}
+
+/* md */
+@media screen and (max-width: 992px) {}
+
+/* sm */
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 84px;
+  }
+
   .footer-logo {
-    max-width: 40px;
+    max-width: 36px;
     transition: 0.2s;
     filter: invert(59%) sepia(26%) saturate(466%) hue-rotate(164deg) brightness(95%) contrast(88%);
   }
 }
 
-/* sm */
-@media screen and (max-width: 768px) {}
+/* xs */
+@media screen and (max-width: 576px) {
+  .footer {
+    height: 42px;
+  }
 
-/* md */
-@media screen and (max-width: 992px) {}
-
-/* lg */
-@media screen and (max-width: 1200px) {}
-
-/* xl */
-@media screen and (max-width: 1400px) {}
+  .footer-logo {
+    max-width: 18px;
+    transition: 0.2s;
+    filter: invert(59%) sepia(26%) saturate(466%) hue-rotate(164deg) brightness(95%) contrast(88%);
+  }
+}

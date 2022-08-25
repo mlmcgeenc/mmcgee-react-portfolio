@@ -9,19 +9,21 @@ import LinkedinLogo from '../../Assets/images/linkedin-brands.svg';
 
 const Footer = () => {
 	return (
-		<div className='d-flex justify-content-center align-items-center fixed-bottom footer test'>
-			<a className='me-4 test' href='https://github.com/mlmcgeenc'>
-				<img className='footer-logo' src={GithubLogo} alt='github logo'></img>
-			</a>
-			<a className='mx-4' href='https://www.linkedin.com/in/mattmcgeenc/'>
-				<img className='footer-logo' src={LinkedinLogo} alt='linked in logo'></img>
-			</a>
-			<a className='mx-4' href='https://codepen.io/mlmcgeenc'>
-				<img className='footer-logo' src={CodepenLogo} alt='codepen logo'></img>
-			</a>
-			<a className='ms-4' href='https://leetcode.com/mlmcgeenc/'>
-				<img className='footer-logo' src={LeetcodeLogo} alt='leetcode logo'></img>
-			</a>
+		<div className='d-flex justify-content-center align-items-center fixed-bottom footer'>
+			<div className='d-flex col-12 col-md-8 col-lg-6 justify-space-between'>
+				<a className='col' href='https://github.com/mlmcgeenc'>
+					<img className='footer-logo' src={GithubLogo} alt='github logo'></img>
+				</a>
+				<a className='col' href='https://www.linkedin.com/in/mattmcgeenc/'>
+					<img className='footer-logo' src={LinkedinLogo} alt='linked in logo'></img>
+				</a>
+				<a className='col' href='https://codepen.io/mlmcgeenc'>
+					<img className='footer-logo' src={CodepenLogo} alt='codepen logo'></img>
+				</a>
+				<a className='col' href='https://leetcode.com/mlmcgeenc/'>
+					<img className='footer-logo' src={LeetcodeLogo} alt='leetcode logo'></img>
+				</a>
+			</div>
 		</div>
 	);
 };
