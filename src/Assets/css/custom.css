@@ -124,7 +124,7 @@ hr {
   height: 20vh;
   padding: 0;
   margin: 18px;
-  border: 1px solid var(--medium-light-blue);
+  border: 1px solid var(--light-blue);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
   border-radius: 10px;
 }
@@ -134,6 +134,7 @@ hr {
 }
 
 .project-card-content {
+  /* opacity: 0; */
   border-radius: 10px;
   height: 100%;
   width: 100%;
@@ -147,6 +148,9 @@ hr {
 .project-card-content:hover {
   backdrop-filter: blur(5px);
   background-color: hsl(0, 0%, 98%, .6);
+  animation: fadeInAnimation ease-in-out .15s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .card-title {
@@ -160,6 +164,20 @@ hr {
   margin: 0;
 }
 
+@keyframes blurAnimation {
+  0% {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+    background-color: hsl(0, 0%, 98%, .0);
+  }
+
+  100% {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    background-color: hsl(0, 0%, 98%, .6);
+  }
+}
+
 /* ======= Contact Form ======= */
 .contact-form {
   text-align: left;
@@ -167,7 +185,7 @@ hr {
   margin-top: 10vh;
   padding: 36px;
   color: var(--dark-blue);
-  animation: fadeInAnimation ease-in .5s;
+  animation: fadeInAnimation ease-in .15s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
