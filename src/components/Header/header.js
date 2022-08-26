@@ -4,8 +4,7 @@ import '../../Assets/css/custom.css';
 import Logo from '../../Assets/images/Circle-Logo.png';
 
 const Header = ({ currentPage, handlePageChange }) => {
-  console.log('Header thinks current page is: ', currentPage)
-
+ 
   const setLinkStatus = (pageName) => `nav-link ${currentPage === pageName ? 'active' : ''}`
 
 	return (

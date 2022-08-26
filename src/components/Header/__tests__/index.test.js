@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import Nav from '../nav';
+import Nav from '../../Navigation/nav';
 
 afterEach(cleanup);
 
