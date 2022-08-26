@@ -3,7 +3,7 @@
   --medium-blue: #25567f;
   --medium-light-blue: #749ab8;
   --light-blue: #aebbc9;
-  --white-blue: #fafafa;
+  --white-blue: hsl(0, 0%, 98%);
   --orange: #F7AA1E;
   --dark-orange: #AB6E00;
 
@@ -119,6 +119,47 @@ hr {
   color: var(--dark-blue) !important;
 }
 
+/* ======= Portfolio/Project======= */
+.project-card-container {
+  height: 20vh;
+  padding: 0;
+  margin: 18px;
+  border: 1px solid var(--medium-light-blue);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+  border-radius: 10px;
+}
+
+.project-card-container:hover {
+  backdrop-filter: blur(5px);
+}
+
+.project-card-content {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  padding: 9px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-content:hover {
+  backdrop-filter: blur(5px);
+  background-color: hsl(0, 0%, 98%, .6);
+}
+
+.card-title {
+  font-size: 36px;
+  color: var(--dark-blue);
+}
+
+.card-info {
+  line-height: 1.25;
+  padding: 0;
+  margin: 0;
+}
+
 /* ======= Contact Form ======= */
 .contact-form {
   text-align: left;
@@ -135,6 +176,7 @@ hr {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

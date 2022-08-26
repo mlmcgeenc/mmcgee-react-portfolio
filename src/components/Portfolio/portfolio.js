@@ -2,55 +2,55 @@ import React from "react";
 import 'bootstrap'
 import '../../Assets/css/custom.css'
 import Project from '../Project/project'
+import screenshot from '../../Assets/images/screenshots/demo-screenshot.png'
 
 const Portfolio = () => {
   const projects = [
 		{
 			name: 'Project 1',
-			screenshot: null,
-			githubLink: null,
-			techStack: [],
+			screenshot: screenshot,
+			link: null,
+			tech: [],
 		},
 		{
 			name: 'Project 2',
-			screenshot: null,
-			githubLink: null,
-			techStack: [],
+			screenshot: screenshot,
+			link: null,
+			tech: [],
 		},
 		{
 			name: 'Project 3',
-			screenshot: null,
-			githubLink: null,
-			techStack: [],
+			screenshot: screenshot,
+			link: null,
+			tech: [],
 		},
 		{
 			name: 'Project 4',
-			screenshot: null,
-			githubLink: null,
-			techStack: [],
+			screenshot: screenshot,
+			link: null,
+			tech: [],
 		},
 		{
 			name: 'Project 5',
-			screenshot: null,
-			githubLink: null,
-			techStack: [],
+			screenshot: screenshot,
+			link: null,
+			tech: [],
 		},
 		{
 			name: 'Project 6',
-			screenshot: null,
-			githubLink: null,
-			techStack: [],
+			screenshot: screenshot,
+			link: null,
+			tech: [],
 		},
 	];
 
 return (
-	<div>
-    <h1>Portfolio</h1>
-    <ul>
+	<div className="container my-auto">
+    <div className="row d-flex justify-content-center align-items-center col-12">
       {projects.map(project => {
         return <Project project={project}/>;
       })}
-    </ul>
+    </div>
 	</div>
 );
 }
