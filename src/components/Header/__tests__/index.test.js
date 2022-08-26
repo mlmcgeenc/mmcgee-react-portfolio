@@ -1,18 +1,16 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import Header from '../header';
+import Nav from '../nav';
 
 afterEach(cleanup);
 
-describe('Header component', () => {
-	// baseline test
+describe('Navigation component', () => {
 	it('renders', () => {
-		render(<Header />);
+		render(<Nav />);
 	});
 
-	// snapshot test
 	it('matches snapshot DOM node structure', () => {
-		const { asFragment } = render(<Header />);
+		const { asFragment } = render(<Nav />);
 		expect(asFragment()).toMatchSnapshot();
 	});
 });
