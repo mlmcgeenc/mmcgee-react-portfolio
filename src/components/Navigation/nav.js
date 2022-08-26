@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap';
 import '../../Assets/css/custom.css';
-import Logo from '../../Assets/images/Circle-Logo.png'
+import Logo from '../../Assets/images/Circle-Logo.png';
 
 const Navigation = () => {
+	const [currentPage, setCurrentPage] = useState('about');
+
+	const handlePageChange = (e) => {
+    console.log(e.target.name)
+		setCurrentPage(e.target.name);
+	};
+
 	return (
 		<nav className='navbar fixed-top navbar-expand-lg'>
 			<div className='container'>
@@ -27,12 +34,25 @@ const Navigation = () => {
 				<div className='collapse navbar-collapse' id='navbarSupportedContent'>
 					<ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
 						<li className='nav-item'>
-							<a className='nav-link active' aria-current='page' href='#About'>
+							<a
+								name='about'
+								className='nav-link active'
+								aria-current='page'
+								href='#About'
+								onClick={handlePageChange}
+							>
 								About Me
 							</a>
 						</li>
 						<li className='nav-item dropdown'>
-							<a className='nav-link dropdown-toggle' href='#Portfolio' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+							<a
+								className='nav-link dropdown-toggle'
+								href='#Portfolio'
+								role='button'
+								data-bs-toggle='dropdown'
+								aria-expanded='false'
+								onClick={handlePageChange}
+							>
 								Portfolio
 							</a>
 							<ul className='dropdown-menu'>
@@ -57,12 +77,22 @@ const Navigation = () => {
 							</ul>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link' href='#Contact'>
+							<a
+								name='contact'
+								className='nav-link'
+								href='#Contact'
+								onClick={handlePageChange}
+							>
 								Contact
 							</a>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link disabled' href='#Resume'>
+							<a
+								name='resume'
+								className='nav-link disabled'
+								href='#Resume'
+								onClick={handlePageChange}
+							>
 								Resume
 							</a>
 						</li>
