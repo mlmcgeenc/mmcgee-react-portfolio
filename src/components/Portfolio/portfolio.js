@@ -16,19 +16,19 @@ const Portfolio = () => {
 			name: 'Project 2',
 			screenshot: screenshot,
 			link: null,
-			tech: ['html', 'css', 'javascript'],
+			tech: ['html', 'css', 'javascript', 'bootstrap'],
 		},
 		{
 			name: 'Project 3',
 			screenshot: screenshot,
 			link: null,
-			tech: ['html', 'css', 'javascript'],
+			tech: ['html', 'css', 'mysql', 'sequelize'],
 		},
 		{
 			name: 'Project 4',
 			screenshot: screenshot,
 			link: null,
-			tech: ['html', 'css', 'javascript'],
+			tech: ['html', 'css', 'javascript', 'mongodb', 'react'],
 		},
 		{
 			name: 'Project 5',
