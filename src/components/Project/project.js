@@ -12,6 +12,7 @@ import sequelize from '../../Assets/images/tech-logos/sequelize.png';
 import mongoDB from '../../Assets/images/tech-logos/mongoDB.png';
 import handlebars from '../../Assets/images/tech-logos/handlebars.png';
 import react from '../../Assets/images/tech-logos/react.png';
+import githubLogo from '../../Assets/images/tech-logos/github.png';
 
 const Project = ({ project }) => {
 	const { name, screenshot, link, tech } = project;
@@ -91,7 +92,11 @@ const Project = ({ project }) => {
 	const StackIcon = (entry) => {
 		let object = getObject(entry);
 		console.log('StackIcon object:', object);
-		return <a href={`${object.link}`} target="_blank"><img src={`${object.backgroundImage}`} className='mx-1 tech-icon' /></a>;
+		return (
+			<a href={`${object.link}`} target='_blank'>
+				<img src={`${object.backgroundImage}`} className='mx-1 tech-icon' />
+			</a>
+		);
 	};
 
 	return (
@@ -103,7 +108,17 @@ const Project = ({ project }) => {
 			}}
 		>
 			<div className='project-card-content'>
-				<div className='card-title'>{name}</div>
+				<div className='card-title-and-link'>
+					<div className='card-title'>{name}</div>
+					<a href='www.gothub.com' className='github-link'>
+						<img
+							src={`${githubLogo}`}
+							alt='github icon'
+							className='github-logo'
+						></img>
+						View on github
+					</a>
+				</div>
 				<div className='card-info'>
 					<p>This is information about the project</p>
 					<div className='d-flex col-12'>

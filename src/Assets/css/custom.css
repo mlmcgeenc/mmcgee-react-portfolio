@@ -168,6 +168,22 @@ hr {
   max-height: 18px;
 }
 
+.github-link {
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--dark-blue)
+}
+
+.github-link:hover {
+  color: var(--orange)
+}
+
+.github-logo {
+  max-width: 18px;
+  margin: 0 9px 0 0;
+}
+
 @keyframes blurAnimation {
   0% {
     opacity: 0;
