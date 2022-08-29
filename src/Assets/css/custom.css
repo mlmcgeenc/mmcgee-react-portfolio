@@ -164,6 +164,10 @@ hr {
   margin: 0;
 }
 
+.tech-icon {
+  max-height: 18px;
+}
+
 @keyframes blurAnimation {
   0% {
     opacity: 0;
