@@ -119,6 +119,31 @@ hr {
   color: var(--dark-blue) !important;
 }
 
+/* ======= About ======= */
+.about {
+  padding: 72px;
+}
+
+.about-header {
+  font-size: 72px;
+}
+
+.about-text{
+  color: var(--medium-blue);
+  font-size: 18px;
+}
+
+.profile-picture {
+  max-height: 300px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.profile {
+  color: var(--dark-blue);
+  text-align: left;
+}
+
 /* ======= Portfolio/Project======= */
 .project-card-container {
   height: 220px;
