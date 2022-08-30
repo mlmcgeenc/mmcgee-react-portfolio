@@ -121,7 +121,7 @@ hr {
 
 /* ======= Portfolio/Project======= */
 .project-card-container {
-  height: 20vh;
+  height: 220px;
   padding: 0;
   margin: 18px;
   border: 1px solid var(--light-blue);
