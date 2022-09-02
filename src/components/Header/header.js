@@ -9,7 +9,7 @@ const Header = ({ currentPage, handlePageChange }) => {
 
 	return (
 		<section className='container-fluid add-space'>
-			<nav className='navbar fixed-top navbar-expand-lg'>
+			<nav className='navbar fixed-top white-background navbar-expand-lg'>
 				<div className='container'>
 					<div className='d-flex align-items-center'>
 						<img className='nav-logo' src={Logo} alt='webpage logo'></img>

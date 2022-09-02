@@ -85,6 +85,11 @@ hr {
   height: 80px;
 }
 
+.white-background {
+  background-color: var(--white-blue);
+  max-height: 80px;
+}
+
 /* ======= Nav ======= */
 
 .navbar-brand {
@@ -128,13 +133,14 @@ hr {
   font-size: 72px;
 }
 
-.about-text{
+.about-text {
   color: var(--medium-blue);
   font-size: 18px;
 }
 
 .profile-picture {
   max-height: 300px;
+  max-width: 300px;
   border-radius: 50%;
   display: inline-block;
 }
