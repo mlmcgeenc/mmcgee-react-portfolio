@@ -5,6 +5,7 @@ import html5 from '../../Assets/images/tech-logos/html5.png';
 import css from '../../Assets/images/tech-logos/css3.png';
 import js from '../../Assets/images/tech-logos/js.png';
 import bootstrap from '../../Assets/images/tech-logos/bootstrap.png';
+import foundation from '../../Assets/images/tech-logos/foundation.png';
 import node from '../../Assets/images/tech-logos/node.png';
 import mysql from '../../Assets/images/tech-logos/mysql.png';
 import express from '../../Assets/images/tech-logos/express.png';
@@ -13,9 +14,10 @@ import mongoDB from '../../Assets/images/tech-logos/mongoDB.png';
 import handlebars from '../../Assets/images/tech-logos/handlebars.png';
 import react from '../../Assets/images/tech-logos/react.png';
 import githubLogo from '../../Assets/images/tech-logos/github.png';
+import rocket from '../../Assets/images/tech-logos/rocket.png';
 
 const Project = ({ project }) => {
-	const { name, screenshot, link, tech } = project;
+	const { name, screenshot, repoLink, deployedLink, tech } = project;
 
 	const getObject = (entry) => {
 		console.log('Switch entry', entry.entry);
@@ -45,6 +47,18 @@ const Project = ({ project }) => {
 					name: 'bootstrap',
 					backgroundImage: bootstrap,
 					link: 'https://getbootstrap.com',
+				};
+			case 'node':
+				return {
+					name: 'node',
+					backgroundImage: node,
+					link: 'https://nodejs.org/en/',
+				};
+			case 'foundation':
+				return {
+					name: 'foundation',
+					backgroundImage: foundation,
+					link: 'https://get.foundation',
 				};
 			case 'express':
 				return {
@@ -110,17 +124,33 @@ const Project = ({ project }) => {
 			<div className='project-card-content'>
 				<div className='card-title-and-link'>
 					<div className='card-title'>{name}</div>
-					<a href='www.gothub.com' className='github-link'>
-						<img
-							src={`${githubLogo}`}
-							alt='github icon'
-							className='github-logo'
-						></img>
-						View on github
-					</a>
+					{repoLink ? (
+						<a href={repoLink} className='github-link'>
+							<img
+								src={`${githubLogo}`}
+								alt='github icon'
+								className='github-logo'
+							></img>
+							View github repo
+						</a>
+					) : (
+						''
+					)}
+					{deployedLink ? (
+						<a href={deployedLink} className='github-link'>
+							<img
+								src={`${rocket}`}
+								alt='rocket icon'
+								className='github-logo'
+							></img>
+							Show me the app
+						</a>
+					) : (
+						''
+					)}
 				</div>
 				<div className='card-info'>
-					<p>This is information about the project</p>
+					<p className='mb-1'>This project uses the following technologies:</p>
 					<div className='d-flex col-12'>
 						{tech.map((entry) => {
 							console.log('map entry', entry);

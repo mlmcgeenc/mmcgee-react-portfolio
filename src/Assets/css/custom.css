@@ -50,7 +50,7 @@ hr {
 }
 
 .glass-effect {
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .2));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .4));
   backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, .5);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
@@ -151,13 +151,18 @@ hr {
 }
 
 /* ======= Portfolio/Project======= */
+.portfolio-container {
+  padding-bottom: 15vh;
+}
+
 .project-card-container {
-  height: 220px;
+  min-height: 280px;
   padding: 0;
   margin: 18px;
   border: 1px solid var(--light-blue);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
   border-radius: 10px;
+  display: flex;
 }
 
 .project-card-container:hover {
@@ -167,7 +172,7 @@ hr {
 .project-card-content {
   /* opacity: 0; */
   border-radius: 10px;
-  height: 100%;
+  min-height: 280px;
   width: 100%;
   text-align: left;
   padding: 9px 18px;
@@ -203,7 +208,8 @@ hr {
   line-height: 18px;
   display: flex;
   align-items: center;
-  color: var(--dark-blue)
+  color: var(--dark-blue);
+  padding: 12px 0 12px 0;
 }
 
 .github-link:hover {
@@ -313,6 +319,14 @@ hr {
 
 /* xs */
 @media screen and (max-width: 576px) {
+  .about {
+    padding: 36px;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
   .contact-form {
     margin-top: 0;
     padding-top: 0;
