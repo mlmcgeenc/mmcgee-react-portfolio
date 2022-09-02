@@ -161,6 +161,10 @@ hr {
   padding-bottom: 15vh;
 }
 
+.portfolio-container a:link {
+  text-decoration: none;
+}
+
 .project-card-container {
   min-height: 280px;
   padding: 0;
@@ -176,9 +180,9 @@ hr {
 }
 
 .project-card-content {
-  /* opacity: 0; */
-  border-radius: 10px;
-  min-height: 280px;
+  opacity: 0;
+  border-radius: 9px;
+  min-height: 278px;
   width: 100%;
   text-align: left;
   padding: 9px 18px;
@@ -190,7 +194,7 @@ hr {
 .project-card-content:hover {
   backdrop-filter: blur(5px);
   background-color: hsl(0, 0%, 98%, .6);
-  animation: fadeInAnimation ease-in-out .15s;
+  animation: fadeInAnimation ease-in-out .2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

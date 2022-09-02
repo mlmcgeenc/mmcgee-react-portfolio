@@ -124,7 +124,7 @@ const Project = ({ project }) => {
 			<div className='project-card-content'>
 				<div className='card-title-and-link'>
 					<div className='card-title'>{name}</div>
-					{repoLink ? (
+					{repoLink && (
 						<a href={repoLink} className='github-link'>
 							<img
 								src={`${githubLogo}`}
@@ -133,25 +133,17 @@ const Project = ({ project }) => {
 							></img>
 							View github repo
 						</a>
-					) : (
-						''
 					)}
-					{deployedLink ? (
+					{deployedLink && (
 						<a href={deployedLink} className='github-link'>
-							<img
-								src={`${rocket}`}
-								alt='rocket icon'
-								className='github-logo'
-							></img>
+							<img src={`${rocket}`} alt='rocket icon' className='github-logo'></img>
 							Show me the app
 						</a>
-					) : (
-						''
 					)}
 				</div>
 				<div className='card-info'>
 					<p className='mb-1'>This project uses the following technologies:</p>
-          <hr className='my-1'/>
+					<hr className='my-1' />
 					<div className='d-flex col-12'>
 						{tech.map((entry) => {
 							console.log('map entry', entry);
