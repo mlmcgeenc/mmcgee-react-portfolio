@@ -151,6 +151,7 @@ const Project = ({ project }) => {
 				</div>
 				<div className='card-info'>
 					<p className='mb-1'>This project uses the following technologies:</p>
+          <hr className='my-1'/>
 					<div className='d-flex col-12'>
 						{tech.map((entry) => {
 							console.log('map entry', entry);

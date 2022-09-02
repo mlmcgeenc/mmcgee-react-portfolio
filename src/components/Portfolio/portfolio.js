@@ -7,11 +7,27 @@ import screenshot from '../../Assets/images/screenshots/demo-screenshot.png'
 const Portfolio = () => {
   const projects = [
 		{
-			name: 'Simple Portfolio',
+			name: 'Local Music Scene',
 			screenshot: screenshot,
-			repoLink: null,
-			deployedLink: null,
-			tech: ['html', 'css'],
+			repoLink: 'https://github.com/cpm-128/local-music-scene',
+			deployedLink: 'https://damp-plateau-16490.herokuapp.com/',
+			tech: [
+				'html',
+				'css',
+				'javascript',
+				'node',
+				'express',
+				'mysql',
+				'sequelize',
+				'handlebars',
+			],
+		},
+		{
+			name: 'EZ Stream',
+			screenshot: screenshot,
+			repoLink: 'https://github.com/mlmcgeenc/group-2-project-one',
+			deployedLink: 'https://mlmcgeenc.github.io/group-2-project-one/',
+			tech: ['html', 'css', 'javascript', 'foundation'],
 		},
 		{
 			name: 'Code Quiz',
@@ -28,25 +44,18 @@ const Portfolio = () => {
 			tech: ['html', 'css', 'javascript'],
 		},
 		{
-			name: 'EZ Stream',
+			name: 'Simple Portfolio',
 			screenshot: screenshot,
-			repoLink: 'https://github.com/mlmcgeenc/group-2-project-one',
-			deployedLink: 'https://mlmcgeenc.github.io/group-2-project-one/',
-			tech: ['html', 'css', 'javascript', 'foundation'],
+			repoLink: 'https://github.com/mlmcgeenc/class-portfolio',
+			deployedLink: 'https://mlmcgeenc.github.io/class-portfolio/',
+			tech: ['html', 'css'],
 		},
 		{
 			name: 'Employee Tracker',
 			screenshot: screenshot,
 			repoLink: 'https://github.com/mlmcgeenc/employee-tracker',
 			deployedLink: null,
-			tech: ['html', 'css', 'javascript'],
-		},
-		{
-			name: 'Local Music Scene',
-			screenshot: screenshot,
-			repoLink: 'https://github.com/cpm-128/local-music-scene',
-			deployedLink: 'https://damp-plateau-16490.herokuapp.com/',
-			tech: ['html', 'css', 'javascript', 'node', 'express', 'mysql', 'sequelize', 'handlebars'],
+			tech: ['javascript', 'node'],
 		},
 	];
 
