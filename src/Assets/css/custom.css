@@ -134,7 +134,7 @@ hr {
 }
 
 .about-text {
-  color: var(--medium-blue);
+  color: var(--dark-blue);
   font-size: 18px;
 }
 
@@ -313,6 +313,15 @@ hr {
 
 /* xs */
 @media screen and (max-width: 576px) {
+  .contact-form {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .portfolio-container {
+    margin-top: 0 !important;
+  }
+
   .footer {
     height: 42px;
   }

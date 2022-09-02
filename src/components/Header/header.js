@@ -13,9 +13,9 @@ const Header = ({ currentPage, handlePageChange }) => {
 				<div className='container'>
 					<div className='d-flex align-items-center'>
 						<img className='nav-logo' src={Logo} alt='webpage logo'></img>
-						<a className='navbar-brand' href='#About'>
+						<div className='navbar-brand'>
 							Matt McGee
-						</a>
+						</div>
 					</div>
 					<button
 						className='navbar-toggler'

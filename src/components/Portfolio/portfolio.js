@@ -46,7 +46,7 @@ const Portfolio = () => {
 
 return (
 	<div className="container">
-    <div className="row d-flex justify-content-center align-items-center mx-2 mt-5">
+    <div className="row d-flex justify-content-center align-items-center mx-2 mt-5 mb-4 portfolio-container">
       {projects.map(project => {
         return <Project project={project}/>;
       })}
