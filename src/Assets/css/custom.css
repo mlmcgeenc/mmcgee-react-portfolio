@@ -275,6 +275,18 @@ hr {
   border: 1px solid var(--medium-light-blue);
 }
 
+/* ======= Resume ======= */
+.resume-container {
+  text-align: left;
+  max-width: 720px;
+  margin-top: 36px;
+  padding: 36px;
+  color: var(--dark-blue);
+  animation: fadeInAnimation ease-in .15s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 /* ======= Footer ======= */
 .footer {
   height: 96px;
@@ -298,8 +310,7 @@ hr {
 }
 
 /* xl */
-@media screen and (max-width: 1400px) {
-}
+@media screen and (max-width: 1400px) {}
 
 /* lg */
 @media screen and (max-width: 1200px) {
