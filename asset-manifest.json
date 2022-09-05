@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/mmcgee-react-portfolio/static/css/main.3ad9861a.css",
-    "main.js": "/mmcgee-react-portfolio/static/js/main.08196d3f.js",
+    "main.css": "/mmcgee-react-portfolio/static/css/main.fb82841b.css",
+    "main.js": "/mmcgee-react-portfolio/static/js/main.896d432a.js",
     "static/js/787.14461c5d.chunk.js": "/mmcgee-react-portfolio/static/js/787.14461c5d.chunk.js",
     "static/media/demo-screenshot.png": "/mmcgee-react-portfolio/static/media/demo-screenshot.3e772e600f59b72c5931.png",
     "static/media/wes-hicks-ZW6RUvsaFTc-unsplash.jpg": "/mmcgee-react-portfolio/static/media/wes-hicks-ZW6RUvsaFTc-unsplash.9d81b1e725763e283b9a.jpg",
     "static/media/Matt.jpeg": "/mmcgee-react-portfolio/static/media/Matt.dd1d29a5eccc007d98c4.jpeg",
+    "static/media/simple-portfolio-screenshot.png": "/mmcgee-react-portfolio/static/media/simple-portfolio-screenshot.732f941da04d783e0e60.png",
+    "static/media/local-music-scene-screenshot.png": "/mmcgee-react-portfolio/static/media/local-music-scene-screenshot.2244233d66bd2f438275.png",
+    "static/media/employee-tracker-screenshot.png": "/mmcgee-react-portfolio/static/media/employee-tracker-screenshot.da4b8bfbf5944b10e9e1.png",
+    "static/media/weather-dashboard-screenshot.png": "/mmcgee-react-portfolio/static/media/weather-dashboard-screenshot.a79a841dbb4dd7895307.png",
+    "static/media/code-quiz-screenshot.png": "/mmcgee-react-portfolio/static/media/code-quiz-screenshot.32af05d1ab1013fbdae4.png",
     "static/media/Circle-Logo.png": "/mmcgee-react-portfolio/static/media/Circle-Logo.bbee6339d3ccf759cf8d.png",
+    "static/media/ez-stream-screenshot.png": "/mmcgee-react-portfolio/static/media/ez-stream-screenshot.d049148154fdf553ecf5.png",
+    "static/media/mcgee-resume.docx": "/mmcgee-react-portfolio/static/media/mcgee-resume.bdab0853d118ebd88cd4.docx",
     "static/media/github-brands.svg": "/mmcgee-react-portfolio/static/media/github-brands.022db3ae71b7f7388d8a9835ca7fded2.svg",
     "static/media/leetcode.svg": "/mmcgee-react-portfolio/static/media/leetcode.2b081d0da9cb07ea1dd29896ba9adb42.svg",
     "static/media/codepen-brands.svg": "/mmcgee-react-portfolio/static/media/codepen-brands.f28fcc56306c27e8f6f7d8e37e8a9660.svg",
     "index.html": "/mmcgee-react-portfolio/index.html",
     "static/media/linkedin-brands.svg": "/mmcgee-react-portfolio/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
-    "main.3ad9861a.css.map": "/mmcgee-react-portfolio/static/css/main.3ad9861a.css.map",
-    "main.08196d3f.js.map": "/mmcgee-react-portfolio/static/js/main.08196d3f.js.map",
+    "main.fb82841b.css.map": "/mmcgee-react-portfolio/static/css/main.fb82841b.css.map",
+    "main.896d432a.js.map": "/mmcgee-react-portfolio/static/js/main.896d432a.js.map",
     "787.14461c5d.chunk.js.map": "/mmcgee-react-portfolio/static/js/787.14461c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ad9861a.css",
-    "static/js/main.08196d3f.js"
+    "static/css/main.fb82841b.css",
+    "static/js/main.896d432a.js"
   ]
 }
