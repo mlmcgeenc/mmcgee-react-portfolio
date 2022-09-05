@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# React Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit the live sit at : https://mlmcgeenc.github.io/mmcgee-react-portfolio/
 
 ## Available Scripts
 
