@@ -10,6 +10,7 @@
 
 ## Description
 A personal portfolio written in React
+
 Visit the live sit at : https://mlmcgeenc.github.io/mmcgee-react-portfolio/
 <img width="534" alt="Screen Shot 2022-09-04 at 8 42 36 PM" src="https://user-images.githubusercontent.com/51179862/188528232-6d92662b-751a-4b52-8251-cb58e5d6e2d9.png">
 
