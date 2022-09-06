@@ -22,7 +22,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Contributing
-I am not accepting controbutions to this project at this time
+I am not accepting contributions to this project at this time
 
 ## Tests
 No tests are currently written for this project
