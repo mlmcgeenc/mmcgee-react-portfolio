@@ -11,7 +11,7 @@ const Header = ({ currentPage, handlePageChange }) => {
 
 	return (
 		<>
-			<section className='container-fluid add-space'>
+			{/* <section className='container-fluid add-space'>
 				<nav className='navbar fixed-top white-background navbar-expand-lg'>
 					<div className='container'>
 						<div className='d-flex align-items-center'>
@@ -63,7 +63,7 @@ const Header = ({ currentPage, handlePageChange }) => {
 						</div>
 					</div>
 				</nav>
-			</section>
+			</section> */}
 			<StyledContainer>
 				<StyledHeader>
 					<StyledBrand>
@@ -71,10 +71,34 @@ const Header = ({ currentPage, handlePageChange }) => {
 						<StyledName>Matt McGee</StyledName>
 					</StyledBrand>
 					<StyledNav>
-						<StyledNavLink>About Me</StyledNavLink>
-						<StyledNavLink>Portfolio</StyledNavLink>
-						<StyledNavLink>Resume</StyledNavLink>
-						<StyledNavLink>Contact</StyledNavLink>
+						<StyledNavLink
+							name='about'
+							className={setLinkStatus("about")}
+							onClick={handlePageChange}
+						>
+							About Me
+						</StyledNavLink>
+						<StyledNavLink
+							name='portfolio'
+							className={setLinkStatus("portfolio")}
+							onClick={handlePageChange}
+						>
+							Portfolio
+						</StyledNavLink>
+						<StyledNavLink
+							name='contact'
+							className={setLinkStatus("contact")}
+							onClick={handlePageChange}
+						>
+							Contact
+						</StyledNavLink>
+						<StyledNavLink
+							name='resume'
+							className={setLinkStatus("resume")}
+							onClick={handlePageChange}
+						>
+							Resume
+						</StyledNavLink>
 					</StyledNav>
 				</StyledHeader>
 			</StyledContainer>
