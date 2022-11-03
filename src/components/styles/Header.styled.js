@@ -35,6 +35,7 @@ export const StyledName = styled.div`
 export const StyledNav = styled.div`
 	display: flex;
 	flex-direction: row;
+  align-items: center;
 `;
 
 export const StyledNavLink = styled.div`

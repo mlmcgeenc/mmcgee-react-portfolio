@@ -5,12 +5,14 @@ const StyledUl = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
+  margin: 0;
+  padding: 0;
   
   li {
     font-size: 18px;
     color: var(--medium-blue);
-    margin: 0 18px 0 18px;
+    margin-left: 18px;
+    margin-right: 18px;
     transition: 0.2s;
     min-width: 75px;
 
