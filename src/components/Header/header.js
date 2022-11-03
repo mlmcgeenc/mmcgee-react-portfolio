@@ -4,10 +4,11 @@ import '../../Assets/css/custom.css';
 import Logo from '../../Assets/images/Circle-Logo.png';
 import { StyledHeader, StyledLogo, StyledBrand, StyledName, StyledNav, StyledNavLink } from '../styles/Header.styled';
 import { StyledContainer } from '../styles/Container.styled';
+import Navbar from '../styles/Nav/Navbar';
 
 const Header = ({ currentPage, handlePageChange }) => {
  
-  const setLinkStatus = (pageName) => `nav-link ${currentPage === pageName ? 'active' : ''}`
+  const setLinkStatus = (pageName) => `${currentPage === pageName ? 'active' : ''}`
 
 	return (
 		<>

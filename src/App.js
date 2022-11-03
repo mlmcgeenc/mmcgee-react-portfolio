@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Assets/css/custom.css'
 import Header from './components/Header/header';
+import Navbar from './components/styles/Nav/Navbar';
 import Footer from './components/Footer/footer';
 import About from './components/About/about';
 import Portfolio from './components/Portfolio/portfolio';
@@ -34,6 +35,7 @@ function App() {
   return (
 		<div className='App custom-fonts'>
 			<Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Navbar />
 			<main>
 				<RenderPage />
 			</main>

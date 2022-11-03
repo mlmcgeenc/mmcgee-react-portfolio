@@ -42,6 +42,8 @@ export const StyledNavLink = styled.div`
 	color: var(--medium-blue);
 	margin: 0 18px 0 18px;
 	transition: 0.2s;
+  min-width: 75px;
+
 
 	&:hover {
 		color: var(--orange);
