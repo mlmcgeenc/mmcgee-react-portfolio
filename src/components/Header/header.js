@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap';
 import '../../Assets/css/custom.css';
 import Logo from '../../Assets/images/Circle-Logo.png';
 import { StyledHeader, StyledLogo, StyledBrand, StyledName } from '../styles/Header.styled';

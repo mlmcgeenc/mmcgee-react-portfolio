@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
 	display: flex;
 	flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px;
+	background-color: hsl(0, 0%, 98%);
 `;
 
 export const StyledBrand = styled.div`
