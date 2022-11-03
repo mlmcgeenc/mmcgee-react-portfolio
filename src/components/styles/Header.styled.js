@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import logo from "../../Assets/images/Circle-Logo.png";
 
 export const StyledHeader = styled.header`
 	display: flex;
@@ -19,7 +18,6 @@ export const StyledLogo = styled.img`
 	height: 36px;
 	margin: 0px 18px 0 0;
 	padding: 0 0 0 0;
-	/* background-image: url(${logo}); */
 `;
 
 export const StyledName = styled.div`
@@ -35,7 +33,6 @@ export const StyledName = styled.div`
 export const StyledNav = styled.div`
 	display: flex;
 	flex-direction: row;
-  align-items: center;
 `;
 
 export const StyledNavLink = styled.div`

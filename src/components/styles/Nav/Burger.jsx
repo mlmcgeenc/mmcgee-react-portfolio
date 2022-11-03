@@ -50,8 +50,8 @@ const Burger = ({ currentPage, handlePageChange, setLinkStatus }) => {
       <div />
       <div />
       <div />
-    </StyledBurger>
-    <RightNav open={open} currentPage={currentPage} handlePageChange={handlePageChange} setLinkStatus={setLinkStatus}/>
+      </StyledBurger>
+      <RightNav open={open} currentPage={currentPage} handlePageChange={handlePageChange} setLinkStatus={setLinkStatus}/>
     </>
   )
 }
