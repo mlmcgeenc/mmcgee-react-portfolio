@@ -2,9 +2,9 @@ import React from 'react';
 import 'bootstrap';
 import '../../Assets/css/custom.css';
 import Logo from '../../Assets/images/Circle-Logo.png';
-import { StyledHeader, StyledLogo, StyledBrand, StyledName, StyledNav, StyledNavLink } from '../styles/Header.styled';
+import { StyledHeader, StyledLogo, StyledBrand, StyledName } from '../styles/Header.styled';
 import { StyledContainer } from '../styles/Container.styled';
-import Burger from '../styles/Nav/Burger';
+import Burger from '../Nav/Burger';
 
 const Header = ({ currentPage, handlePageChange}) => {
  
