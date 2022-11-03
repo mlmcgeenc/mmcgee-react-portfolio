@@ -5,6 +5,7 @@ const StyledUl = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   
   li {
     font-size: 18px;
@@ -20,7 +21,7 @@ const StyledUl = styled.ul`
 
     &.active {
       font-weight: bold;
-      color: var(--dark-blue) !important;
+      /* color: var(--dark-blue) !important; */
     }
   }
 
@@ -45,13 +46,14 @@ const StyledUl = styled.ul`
   }
 `;
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open, currentPage, handlePageChange }) => {
+  const setLinkStatus = (pageName) => `${currentPage === pageName ? 'active' : ''}`
   return (
     <StyledUl open={open}>
-      <li>About Me</li>
-      <li>Portfolio</li>
-      <li>Contact</li>
-      <li>Resume</li>
+      <li name="about" className={setLinkStatus("about")} onClick={handlePageChange}>About Me</li>
+      <li name="portfolio" className={setLinkStatus("portfolio")} onClick={handlePageChange}>Portfolio</li>
+      <li name="contact" className={setLinkStatus("contact")} onClick={handlePageChange}>Contact</li>
+      <li name="resume" className={setLinkStatus("resume")} onClick={handlePageChange}>Resume</li>
     </StyledUl>
   )
 }

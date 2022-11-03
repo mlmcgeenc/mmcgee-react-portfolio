@@ -35,7 +35,7 @@ function App() {
   return (
 		<div className='App custom-fonts'>
 			<Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Navbar />
+      {/* <Navbar /> */}
 			<main>
 				<RenderPage />
 			</main>

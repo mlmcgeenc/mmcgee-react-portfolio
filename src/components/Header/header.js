@@ -4,9 +4,10 @@ import '../../Assets/css/custom.css';
 import Logo from '../../Assets/images/Circle-Logo.png';
 import { StyledHeader, StyledLogo, StyledBrand, StyledName, StyledNav, StyledNavLink } from '../styles/Header.styled';
 import { StyledContainer } from '../styles/Container.styled';
+import Burger from '../styles/Nav/Burger';
 import Navbar from '../styles/Nav/Navbar';
 
-const Header = ({ currentPage, handlePageChange }) => {
+const Header = ({ currentPage, handlePageChange}) => {
  
   const setLinkStatus = (pageName) => `${currentPage === pageName ? 'active' : ''}`
 
@@ -65,7 +66,7 @@ const Header = ({ currentPage, handlePageChange }) => {
 					</div>
 				</nav>
 			</section> */}
-			<StyledContainer>
+			{/* <StyledContainer>
 				<StyledHeader>
 					<StyledBrand>
 						<StyledLogo src={Logo}></StyledLogo>
@@ -101,6 +102,16 @@ const Header = ({ currentPage, handlePageChange }) => {
 							Resume
 						</StyledNavLink>
 					</StyledNav>
+				</StyledHeader>
+			</StyledContainer> */}
+
+			<StyledContainer>
+				<StyledHeader>
+					<StyledBrand>
+						<StyledLogo src={Logo}></StyledLogo>
+						<StyledName>Matt McGee</StyledName>
+					</StyledBrand>
+					<Burger currentPage={currentPage} handlePageChange={handlePageChange} setLinkStatus={setLinkStatus}/>
 				</StyledHeader>
 			</StyledContainer>
 		</>

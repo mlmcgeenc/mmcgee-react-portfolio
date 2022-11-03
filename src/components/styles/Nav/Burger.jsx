@@ -16,7 +16,8 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: .25rem;
-    background-color: ${({ open }) => open ? '#f1f1f1' : '#333'};
+    background-color: ${({ open }) => open ? '#aebbc9' : '#0f2643'};
+    display: none;
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s;
@@ -33,10 +34,14 @@ const StyledBurger = styled.div`
     &:nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'}
     }
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 `
 
-const Burger = () => {
+const Burger = ({ currentPage, handlePageChange, setLinkStatus }) => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -46,7 +51,7 @@ const Burger = () => {
       <div />
       <div />
     </StyledBurger>
-    <RightNav open={open}/>
+    <RightNav open={open} currentPage={currentPage} handlePageChange={handlePageChange} setLinkStatus={setLinkStatus}/>
     </>
   )
 }
