@@ -8,6 +8,7 @@ import About from './components/About/about';
 import Portfolio from './components/Portfolio/portfolio';
 import Contact from './components/Contact/contact';
 import Resume from './components/Resume/resume';
+import { MenuOpenProvider } from './MenuOpenContext';
 
 function App() {
   	const [currentPage, setCurrentPage] = useState('about');
@@ -32,13 +33,15 @@ function App() {
 		};
 
   return (
-		<div className='App custom-fonts'>
-			<Header currentPage={currentPage} handlePageChange={handlePageChange} />
-			<main>
-				<RenderPage />
-			</main>
-			<Footer />
-		</div>
+		<MenuOpenProvider>
+			<div className='App custom-fonts'>
+				<Header currentPage={currentPage} handlePageChange={handlePageChange} />
+				<main>
+					<RenderPage />
+				</main>
+				<Footer />
+			</div>
+		</MenuOpenProvider>
 	);
 }
 
